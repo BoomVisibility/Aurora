@@ -1,0 +1,28 @@
+@media (min-width: 1025px) {
+header.smaller  #masthead .logo{
+	width: 150px;
+	height:52px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;}
+
+body header.smaller{padding-top: 0px;}
+header.smaller #masthead, header.smaller .top-bar .container{display: none;}
+body header.smaller .navigation-primary{margin-top: 0;}
+body header.global{
+	position: fixed;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	-ms-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	transition: height 0.3s; }
+
+body.home #main{margin-top: 133px;}
+body #main{margin-top: 250px;}
+body header.smaller .navigation-container .navigation-primary li a {padding: 21px 10px;}
+body header.smaller #schedule {min-height: 59px;}
+body header.smaller  #schedule a.button {display: none;}
+body header.smaller  #schedule .half { padding: 1% 0;}
+}
