@@ -91,8 +91,8 @@ get_header(); ?>
 			<div class="clearboth"></div>
 		</div>
 	<?php
-	$count = count(get_field('reviews', 'option'));
-	if(have_rows('reviews', 'option')) : ?>
+	if(have_rows('reviews', 'option')) : 
+		$count = count(get_field('reviews', 'option')); ?>
 		<section id="testimonials"<?php if($count == 1){ echo ' class="one-group"';} ?>>
 			<div class="container textalign-center">
 				<h2><?php the_field('testimonial_title'); ?></h2>
