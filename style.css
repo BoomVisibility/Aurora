@@ -1134,6 +1134,7 @@ section.blue a.button {color: #fff;text-decoration: none;}
 section.blue a:hover {color: #fff;}
 .box {padding: 5%;background: #fff;}
 .entry-content .box ul {padding-top: 15px;}
+div.flex-box {max-width: 100px;margin-right: 50px;}
 section.white .box {background: #F2F4F5;}
 .page .entry-content .flex-container{
   -webkit-box-align: center;
