@@ -1084,13 +1084,14 @@ h3.phone.orange a:before {content: url(images/phone-orange.png); margin-right: 1
   h3.phone.orange {font-size: 44px;font-weight: 500;}
   #offers .half {padding: 100px 0 50px 0;text-align: left;}
   #offers .half.last {
-    align-self: flex-start;
+    top: 0;
     position: absolute;
-    left: 50%;
+    left: calc(50% + 2vw);
     width: 50%;
-    height: 700px;
+    height: 100%;
     padding: 0;
-    margin: 0;}
+    background-position: center;
+    background-size: cover;}
   .offer-section {
     padding: 0 0 0 5%;
     width: calc(50% + 215px);
@@ -1134,7 +1135,7 @@ section.blue a.button {color: #fff;text-decoration: none;}
 section.blue a:hover {color: #fff;}
 .box {padding: 5%;background: #fff;}
 .entry-content .box ul {padding-top: 15px;}
-div.flex-box {max-width: 100px;margin-right: 50px;}
+.flex-container > div.flex-box {max-width: 100px;margin-right: 50px;}
 section.white .box {background: #F2F4F5;}
 .page .entry-content .flex-container{
   -webkit-box-align: center;
@@ -1306,8 +1307,8 @@ section.full input#formbutton {
 }
 
 /* FAQ Page */
-.post-type-archive-faq section.white {padding: 75px 0 0 0;}
-.post-type-archive-faq section.white:last-of-type {padding: 0 0 75px 0;}
+.post-type-archive-faq section.white {padding: 75px 0;}
+.post-type-archive-faq section.white:nth-child(odd) {background: #F2F4F5;}
 
 @media (max-width: 1025px) {
   .post-type-archive-faq section.white{padding: 5% 0 0 0;}
