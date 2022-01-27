@@ -29,16 +29,13 @@
 		<div class="footer-logo">
 			<?php
 				$image = get_field('logo', 'option');
-    		$url = $image['url'];
-    		$title = $image['title'];
-    		$alt = $image['alt'];
-    		$size = 'thumbnail';
-    		$thumb = $image['sizes'][ $size ];
-    		$width = $image['sizes'][ $size . '-width' ];
-    		$height = $image['sizes'][ $size . '-height' ];
+    				$url = $image['url'];
+    				$title = $image['title'];
+    				$alt = $image['alt'];
+
 				if( !empty( $image ) ): ?>
-    			<img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?> width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
-			<?php endif; ?>
+    					<img src="<?php echo esc_url($url); ?>" alt="<?php echo esc_attr($alt); ?> width="150" height="150" />
+				<?php endif; ?>
 		</div>
 		<div class="clearboth"></div>
 		<div class="navigation-container" role="navigation">
