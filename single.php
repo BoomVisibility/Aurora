@@ -7,11 +7,7 @@
  * @since Aurora 1.0
  */
 get_header(); ?>
-<?php if ( has_post_thumbnail() ) : ?>
-	<header class="entry-header" style="background-image: url(<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'page-header' ); echo $feat_image;  ?>);">
-<?php else : ?>
-	<header class="entry-header" style="background-image: url('<?php the_field('header_image', 'option'); ?>');">
-<?php endif; ?>
+<header class="entry-header" style="background-image: url('<?php the_field('header_image', 'option'); ?>');">
 	<div id="content" class="container" role="main">
 		<div id="primary" class="site-content">
 			<h2 class="single-post-title"><?php $our_title = get_the_title( get_option('page_for_posts', true) ); echo $our_title; ?></h2>
