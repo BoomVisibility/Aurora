@@ -30,7 +30,7 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post();
 			$i++; ?>
-			<?php if($i % 2 == 0) { ?><section class="white"><?php } else { ?><section><?php } ?>
+			<?php if($i % 2 == 0) { ?><section class="white"><?php } else { ?><section class="gray"><?php } ?>
 			<div class="container" role="main">
 				<div class="site-content entry-content">
 					<?php get_template_part( 'content', get_post_format() ); ?>
