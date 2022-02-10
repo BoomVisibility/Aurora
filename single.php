@@ -25,7 +25,7 @@ get_header(); ?>
 				<li>Share: </li>
 				<li class="facebook"><a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-facebook"></span></a></li>
 				<li class="twitter"><a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-twitter"></span></a></li>
-				<li class="pinterest"><a href="https://pinterest.com/pin/create/link/?url=<?php the_permalink(); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-pinterest"></span></a></li>
+				<li class="pinterest"><a href="https://www.pinterest.com/pin/create/link/?url=<?php the_permalink(); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-pinterest"></span></a></li>
 			</ul>
 	</div>
 </div>
