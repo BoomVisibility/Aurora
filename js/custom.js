@@ -1,42 +1,44 @@
 jQuery(function($) {
 $(document).ready(function(){
   $('.bxslider').bxSlider({
-	  controls: false,
-    pager: false,
-	  auto: false,
-	  mode: 'fade',
-	  pause: 7000,
-	  adaptiveHeight: false
+	controls: false,
+    	pager: false,
+	auto: false,
+	mode: 'fade',
+	pause: 7000,
+	adaptiveHeight: false
   });
   $('a[href$=".pdf"]').each(function() {
-    $(this).prop('target', '_blank');
+	$(this).prop('target', '_blank');
   });
   $('.entry-content a[href$=".pdf"]').each(function() {
-    $(this).addClass('pdf');
+	$(this).addClass('pdf');
   });
   $('#menu-primary-menu').slicknav({
-		label: '',
-		duration: 300,
-		allowParentLinks: true,
-		closedSymbol: '&#43;',
-    openedSymbol: '&#8722;',
-	  prependTo:'.mobile-menu'
+	label: '',
+	duration: 300,
+	allowParentLinks: true,
+	closedSymbol: '&#43;',
+    	openedSymbol: '&#8722;',
+	prependTo:'.mobile-menu'
 	});
+  $(".email a:contains('@')").html(function () {
+    	return $(this).html().replace("@", "@<wbr />"); 
+  });
 
-
-  	//ACCORDION
-  	$(".accordion h3, .accordion h2").addClass("accordion-btn");
-  		$(".accordion-btn").each(function(){
-  		$(this).nextUntil('.accordion-btn').add().wrapAll('<div class="accordion-content" style="display: none">');
-  	});
-  	$(".accordion-btn").on("click", function(){
-  		if($(this).hasClass("active")){
-  			$(this).removeClass("active").next().slideUp();
-  		}else{
-  			$(".accordion-btn").removeClass("active").next().slideUp();
-  			$(this).addClass("active").next().slideDown();
-  		}
-  	});
+//ACCORDION
+  $(".accordion h3, .accordion h2").addClass("accordion-btn");
+	$(".accordion-btn").each(function(){
+	$(this).nextUntil('.accordion-btn').add().wrapAll('<div class="accordion-content" style="display: none">');
+  });
+  $(".accordion-btn").on("click", function(){
+  	if($(this).hasClass("active")){
+  		$(this).removeClass("active").next().slideUp();
+  	}else{
+  		$(".accordion-btn").removeClass("active").next().slideUp();
+  		$(this).addClass("active").next().slideDown();
+  	}
+  });
 
   window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
