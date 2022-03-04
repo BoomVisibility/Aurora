@@ -1225,6 +1225,7 @@ ul.social .dashicons, ul.social .dashicons-before:before {
 /* Contact Page */
 .page-template-contact-page .full {display: flex;flex-wrap: wrap;}
 .page-template-contact-page .full .half {float: none;}
+.form-body hr {margin: 0;}
 
 @media (max-width: 1025px) {
   #content.reverse {display: flex;flex-wrap: wrap;}
